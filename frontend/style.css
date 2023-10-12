@@ -74,3 +74,27 @@ li {
     width: 200px; /* Adjust the width as desired */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+.message {
+    text-align: center; /* Center the message */
+    margin-top: 10px; /* Add some space between button and message */
+    color: green; /* Color for success message */
+    font-weight: bold; /* Make the message bold */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.success {
+    color: green; /* Make the text color green */
+    background-color: initial; /* Remove any background color */
+    border: none; /* Remove any border */
+}
+
+
+.error {
+    color: rgb(255, 0, 0);
+    background-color: initial; /* Remove any background color */
+    border: none; /* Remove any border */
+}

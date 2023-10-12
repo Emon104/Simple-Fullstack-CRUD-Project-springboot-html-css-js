@@ -21,6 +21,7 @@
 <div id="message"></div>
 
 <!-- Form for creating a student -->
+
 <form id="createStudentForm" method="post" >
     <label for="roll">Roll Number:</label>
     <input type="number" id="roll" required>
@@ -29,9 +30,11 @@
     <label for="address">Address:</label>
     <input type="text" id="address" required>
     <button type="submit">Create Student</button>
+    <div id="createMessage" class="message success"></div>
 </form>
 
 <!-- Form for updating a student -->
+
 <form id="updateStudentForm"  >
     <label for="updateRoll">Roll Number (to update):</label>
     <input type="number" id="updateRoll" required>
@@ -40,14 +43,17 @@
     <label for="updateAddress">New Address:</label>
     <input type="text" id="updateAddress" required>
     <button type="submit">Update Student</button>
+    <div id="updateMessage" class="message success"></div> 
 </form>
 
 <!-- Form for deleting a student -->
-<form id="deleteStudentForm" >
+<form id="deleteStudentForm">
     <label for="deleteRoll">Roll Number (to delete):</label>
     <input type="number" id="deleteRoll" required>
     <button type="submit">Delete Student</button>
+    <div id="deleteMessage" class="message success"></div> <!-- Success message for delete -->
 </form>
+
 
 <!-- Form for Getting a student -->
 <form id="getStudentForm" >
