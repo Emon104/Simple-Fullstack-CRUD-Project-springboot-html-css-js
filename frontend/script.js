@@ -168,5 +168,12 @@ function getStudentByRoll(roll) {
             console.error(error);
             // Handle the error, e.g., show an error message
             getMessage.textContent = "An error occurred. Please try again.";
+            getMessage.classList.add("error");
+            
+        // Clear the message after 5 seconds
+        setTimeout(() => {
+        getMessage.textContent = "";
+        getMessage.classList.remove("success", "error");
+    }, 5000);
         });
 }
